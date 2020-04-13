@@ -1,2 +1,1 @@
-CREATE USER 'petclinic' IDENTIFIED BY 'petclinic';
-GRANT ALL ON petclinic.* TO 'petclinic';
+SET GLOBAL time_zone = '+02:00';
