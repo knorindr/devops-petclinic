@@ -495,7 +495,7 @@
             <id>MySQL</id>
             <properties>
                 <db.script>mysql</db.script>
-                <jpa.database>petclinic</jpa.database>
+                <jpa.database>MySQL</jpa.database>
                 <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
                 <jdbc.url>jdbc:mysql://renekevinmysqlserver.mysql.database.azure.com:3306/petclinic?useSSL=true&requireSSL=false</jdbc.url>
                 <jdbc.username>renekevin_root@renekevinmysqlserver</jdbc.username>
