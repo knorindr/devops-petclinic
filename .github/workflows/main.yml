@@ -33,7 +33,7 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     # Test
     - name: Test with Maven
-      run: mvn test -B --file pom.xml
+      run: mvn test -P MySQL -B --file pom.xml
     # Build
     - name: Build with Maven
       run: mvn package -B -DskipTests --file pom.xml
