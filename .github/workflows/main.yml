@@ -55,6 +55,9 @@ jobs:
         cluster-name: ${{ env.AKS_CLUSTER }}
         resource-group: ${{ env.AKS_RESOURCEGROUP }}
       id: login
+    # Create namespace if doesn't exist
+    - run: |
+        kubectl create namespace ${{ env.NAMESPACE }} --dry-run -o json | kubectl apply -f -
     # Imagepullscret for ACR
     - uses: Azure/k8s-create-secret@v1
       with:
