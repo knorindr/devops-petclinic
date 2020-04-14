@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - image: renekevin.azurecr.io/petclinic:latest
-          #imagePullPolicy: Always
+          imagePullPolicy: Always
           name: petclinic
           ports:
             - containerPort: 8080
